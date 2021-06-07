@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.inicio {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #1d3483cc 0%, #1d348300 100%), url('../../assets/img/jardins-londres-2.png') no-repeat center / cover;
+}
+
+.textoInicio {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.textoInicio > * {
+  color: #fff;
+}
+
+.textoInicio h1 {
+  width: 70%;
+  margin-bottom: 38px;
+  font-family: 'Parisienne';
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.textoInicio h5 {
+  width: 70%;
+  font-family: 'Roboto';
+  font-weight: 100;
+}
+
+.apresentacao {
+  padding: 50px 0;
+}
+
+.apresentacao .topoApresentacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.apresentacao .topoApresentacao img {
+  width: 150px;
+  margin: -100px 0 0;
+}
+
+.apresentacao .topoApresentacao h2 {
+  padding: 3rem 0;
+  text-align: center;
+  font-weight: 100;
+}
+
+.slideApresentacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideApresentacao .carouselApresentacao {
+  width: 68%;
+  padding: 20px;
+}
+
+.formulario {
+  padding: 50px 0;
+  background: #1d3483;
+}
+
+.formulario * {
+  color: #fff;
+}
+
+.formulario .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario .container > * {
+  width: 50%;
+  padding: 20px;
+}
+
+.textoFormulario > * {
+  padding: 20px 0;
+}
+
+.formulario form input {
+  background: none;
+}
+
+.formulario form input:focus {
+  color: #1d3483;
+}
+
+.formulario form input::placeholder {
+  color: #fff5;
+}
+
+.labelRadio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--verde-escuro);
+  transition: 0.5s ease;
+}
+
+.labelRadio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fffa;
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+
+.labelRadio:hover input ~ .checkmark {
+  background-color: #fff5;
+  border: 1px solid #fff;
+  transition: 0.5s ease;
+}
+
+.labelRadio input:checked ~ .checkmark {
+  background-color: var(--verde-escuro);
+  transition: 0.5s ease;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radioGroup div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.radioGrupo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+

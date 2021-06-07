@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'cherolinaregular';
+    src: url('cherolina-webfont.woff2') format('woff2'),
+         url('cherolina-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
